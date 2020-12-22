@@ -930,7 +930,7 @@ export const state = () => ({
     checkWarning(state,payload){
       const items=JSON.parse(payload)
       const maxDO=5;
-      const maxTEMP=30;
+      const maxTEMP=31;
       const maxPH=8.5;
       const maxDD=15;
       const maxNH3=0.3;
