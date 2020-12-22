@@ -23,7 +23,7 @@ export const state = () => ({
       {
         title: "Station A",
         subtitle: "Kolam 1",
-        image: "image1.jpg",
+        image: "Kolam 1.jpeg",
         cols: 6,
         DO: 0,
         TEMP:0,
@@ -115,7 +115,7 @@ export const state = () => ({
       {
         title: "Station B",
         subtitle: "Kolam 2",
-        image: "image2.jpg",
+        image: "Kolam 2.jpeg",
         cols: 6,
         DO: 0,
         TEMP:0,
@@ -207,7 +207,7 @@ export const state = () => ({
       {
         title: "Station C",
         subtitle: "Kolam 3",
-        image: "image3.jpg",
+        image: "Kolam 3.jpeg",
         cols: 6,
         DO: 0,
         TEMP:0,
@@ -299,7 +299,7 @@ export const state = () => ({
       {
         title: "Station D",
         subtitle: "Kolam 4",
-        image: "image4.jpg",
+        image: "Kolam 4.jpeg",
         cols: 6,
         DO: 0,
         TEMP:0,

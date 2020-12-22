@@ -338,7 +338,7 @@ export default {
             detail: {
               show: false
             },
-            data: [{value: this.speed, name: 'Speed (rpm)'}]
+            data: [{value: this.speed, name: 'Speed (MHz)'}]
           }
         ]
       }
@@ -510,7 +510,7 @@ export default {
             detail: {
               show: false
             },
-            data: [{value: this.speed, name: 'Speed (rpm)'}]
+            data: [{value: this.speed, name: 'Speed (MHz)'}]
           }
         ]
       }

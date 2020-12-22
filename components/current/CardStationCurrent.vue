@@ -8,7 +8,7 @@
         sm="3"
       >
         <v-card @click="console(index)" :id="index" class='card card-color  elevation-12 '>
-          <v-img :src="item.image" height="120px"></v-img>
+          <v-img :src="item.image" height="180px"></v-img>
           <v-card-title>{{ item.title }}</v-card-title>
           <v-card-subtitle>{{ item.subtitle }}</v-card-subtitle>
         </v-card>
