@@ -449,7 +449,7 @@ export default {
   },
 
     async created() {
-    const station=['stationOne','stationTwo','stationThree','stationFour']
+    const station=['1','2','3','4']
     const val=['do_val','tmp_val','ph_val','dd_val','dg_val']
 
     // daily
