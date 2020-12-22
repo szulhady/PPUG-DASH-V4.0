@@ -334,7 +334,7 @@ export default {
     this.timeKolam4=new Date()
 
     this.$mqtt = await this.$mqtt;
-    console.log(this.$mqtt);
+    // console.log(this.$mqtt);
     this.$mqtt.subscribe("ppug/server/stats");
     this.$mqtt.subscribe("ppug/kolam1");
     this.$mqtt.subscribe("ppug/kolam2");
