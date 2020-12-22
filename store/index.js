@@ -941,39 +941,39 @@ export const state = () => ({
       // const maxDD=0;
       // const maxNH3=0;
 
-      state.items[items.id-1].warning=[]
-      state.status[items.id-1].remarks=[]
-      state.items[items.id-1].isDOHigh=false
-      state.items[items.id-1].isTEMPHigh=false
-      state.items[items.id-1].isPHHigh=false
-      state.items[items.id-1].isDDHigh=false
-      state.items[items.id-1].isNH3High=false
+      state.items[items.ID-1].warning=[]
+      state.status[items.ID-1].remarks=[]
+      state.items[items.ID-1].isDOHigh=false
+      state.items[items.ID-1].isTEMPHigh=false
+      state.items[items.ID-1].isPHHigh=false
+      state.items[items.ID-1].isDDHigh=false
+      state.items[items.ID-1].isNH3High=false
 
-      if(state.items[items.id-1].DO >=maxDO){
-        state.items[items.id-1].warning.push(" Dissolved oxygen reading is high")
-        state.items[items.id-1].isDOHigh=true
+      if(state.items[items.ID-1].DO >=maxDO){
+        state.items[items.ID-1].warning.push(" Dissolved oxygen reading is high")
+        state.items[items.ID-1].isDOHigh=true
       }
-      if(state.items[items.id-1].TEMP >maxTEMP){
-        state.items[items.id-1].warning.push(" Temperature reading is high")
-        state.items[items.id-1].isTEMPHigh=true
+      if(state.items[items.ID-1].TEMP >maxTEMP){
+        state.items[items.ID-1].warning.push(" Temperature reading is high")
+        state.items[items.ID-1].isTEMPHigh=true
       }
-      if( state.items[items.id-1].PH>maxPH){
-        state.items[items.id-1].warning.push(' pH reading is high')
-        state.items[items.id-1].isPHHigh=true
+      if( state.items[items.ID-1].PH>maxPH){
+        state.items[items.ID-1].warning.push(' pH reading is high')
+        state.items[items.ID-1].isPHHigh=true
       }
-      if(state.items[items.id-1].DD>=maxDD){
-        state.items[items.id-1].warning.push(' Salinity reading is high')
-        state.items[items.id-1].isDDHigh=true
+      if(state.items[items.ID-1].DD>=maxDD){
+        state.items[items.ID-1].warning.push(' Salinity reading is high')
+        state.items[items.ID-1].isDDHigh=true
       }
-      if(state.items[items.id-1].NH3>=maxNH3){
-        state.items[items.id-1].warning.push(' Ammonia reading is high')
-        state.items[items.id-1].isNH3High=true
+      if(state.items[items.ID-1].NH3>=maxNH3){
+        state.items[items.ID-1].warning.push(' Ammonia reading is high')
+        state.items[items.ID-1].isNH3High=true
       }
 
-      if(state.items[items.id-1].warning.length>0){
-        state.status[items.id-1].remarks=state.items[items.id-1].warning.toString()
+      if(state.items[items.ID-1].warning.length>0){
+        state.status[items.ID-1].remarks=state.items[items.ID-1].warning.toString()
       }else{
-        state.status[items.id-1].remarks=["Good"]
+        state.status[items.ID-1].remarks=["Good"]
       }   
     },
 
@@ -991,11 +991,11 @@ export const state = () => ({
 
     getMQTTDataEach(state,payload){
       const items=JSON.parse(payload)
-      state.items[items.id-1].DO=items.DO;
-      state.items[items.id-1].TEMP=items.Temp;
-      state.items[items.id-1].PH=items.pH;
-      state.items[items.id-1].DD=items.DD;
-      state.items[items.id-1].NH3=items.NH4;
+      state.items[items.ID-1].DO=items.DO;
+      state.items[items.ID-1].TEMP=items.Temp;
+      state.items[items.ID-1].PH=items.pH;
+      state.items[items.ID-1].DD=items.DD;
+      state.items[items.ID-1].NH3=items.NH4;
     },
 
     getServerHealth(state, payload){
